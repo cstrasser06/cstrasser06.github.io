@@ -1,5 +1,5 @@
 function myFunction(){
     var val = document.getElementById('searchvalue').value;
-    var text = "/websites/" + val + ".html";
-    window.open(text);
+    var text = val + ".html";
+    window.open("https://cstrasser06.github.io/", text);
 }
