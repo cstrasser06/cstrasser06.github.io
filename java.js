@@ -4,10 +4,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
     if (isAndroid) {
         window.alert("this is android");
+        document.body.style.backgroundColor = "cyan"
     }
     if (isiOS) {
         // Fügen Sie Ihre iOS-spezifischen CSS-Klassen hinzu
+        var container = document.getElementById('container');
+        container.style.justifyContent = "left";
+        container.style.alignContent = "center";
         document.body.style.backgroundColor = "yellow";
-        window.alert("this is a ios webpage");
     }
 });

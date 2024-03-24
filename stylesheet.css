@@ -1,10 +1,32 @@
 #container{
     width: 100%;
     height: 20vh;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-between;
+}
+.logo{
+    width: auto;
+    height: 20vh;
     padding: 3vh;
     display: flex;
     background-color: red;
     justify-content: start;
+}
+.userInteraction{
+    width: auto;
+    height: 20vh;
+    padding: 3vh;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    background-color: darkmagenta;
+}
+.userPicture{
+    width:30px;
+    height: 30px;
+    object-fit: scale-down;
 }
 .imageLogo{
     background-repeat: no-repeat;
@@ -21,9 +43,6 @@
 @media (max-device-width: 768px) {
     #container{
         background-color: blue;
-    }
-    body{
-        background-color: green;
     }
     .navbar{
         font-size: 60px;
