@@ -18,7 +18,47 @@
     padding-left: 3vw;
     font-size: 50px;
 }
-@media (max-device-width: 768px) {
+@media screen and (max-width: 767px) and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    #container{
+        background-color: darkmagenta;
+    }
+    .navbar{
+        font-size: 60px;
+    }
+    .navbar-brand {
+        font-size:60px !important;
+        color:red !important;/* Größere Schriftgröße für den Text */
+    }
+    /* Navbar Collapse Icon Größe anpassen */
+    .navbar-toggler-icon {
+        font-size: 60px; /* Größere Schriftgröße für das Icon */
+    }
+    .dropdown-item{
+        font-size: 60px;
+    }
+}
+
+/* Media Query für Android */
+@media screen and (max-width: 767px) and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #container{
+        background-color: aqua;
+    }
+    .navbar{
+        font-size: 60px;
+    }
+    .navbar-brand {
+        font-size:60px !important;
+        color:red !important;/* Größere Schriftgröße für den Text */
+    }
+    /* Navbar Collapse Icon Größe anpassen */
+    .navbar-toggler-icon {
+        font-size: 60px; /* Größere Schriftgröße für das Icon */
+    }
+    .dropdown-item{
+        font-size: 60px;
+    }
+}
+/*@media (max-device-width: 768px) {
     #container{
         background-color: blue;
     }
@@ -30,15 +70,15 @@
     }
     .navbar-brand {
         font-size:60px !important;
-        color:red;/* Größere Schriftgröße für den Text */
+        color:red;/* Größere Schriftgröße für den Text
     }
-    /* Navbar Collapse Icon Größe anpassen */
+    Navbar Collapse Icon Größe anpassen
     .navbar-toggler-icon {
-        font-size: 60px; /* Größere Schriftgröße für das Icon */
+        font-size: 60px; /* Größere Schriftgröße für das Icon
     }
     .dropdown-item{
         font-size: 60px;
     }
-}
+}*/
 
 
