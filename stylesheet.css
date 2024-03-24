@@ -17,16 +17,22 @@
 .userInteraction{
     width: auto;
     height: 20vh;
-    padding: 3vh;
     display:flex;
-    justify-content: end;
     align-items: center;
-    background-color: darkmagenta;
+    background-color: red;
+    justify-content: end;
 }
 .userPicture{
-    width:30px;
-    height: 30px;
+    width: 30px;
+    height: 20vh;
+    display: flex;
+    background-color: cyan;
+    justify-content: left;
+}
+.imageUser{
+    margin:7vh;
     object-fit: scale-down;
+    justify-content: right;
 }
 .imageLogo{
     background-repeat: no-repeat;
@@ -57,6 +63,13 @@
     }
     .dropdown-item{
         font-size: 60px;
+    }
+    .userInteraction{
+        font-size: 30px;
+    }
+    .imageUser{
+        margin: auto;
+        width: auto;
     }
 }
 
