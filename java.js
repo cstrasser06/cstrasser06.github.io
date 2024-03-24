@@ -3,10 +3,11 @@ document.addEventListener("DOMContentLoaded", function(){
     var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
     if (isAndroid) {
-        // Fügen Sie Ihre Android-spezifischen CSS-Klassen hinzu
+        window.alert("this is android");
     }
     if (isiOS) {
         // Fügen Sie Ihre iOS-spezifischen CSS-Klassen hinzu
         document.body.style.backgroundColor = "yellow";
+        window.alert("this is a ios webpage");
     }
 });
