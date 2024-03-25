@@ -66,6 +66,10 @@
     .user{
         margin: auto;
     }
+    .headerText{
+        justify-content: center;
+        margin:auto;
+    }
 
 ;
 }
