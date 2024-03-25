@@ -33,8 +33,31 @@
 }
 .imageUser{
     height: 20vh;
-    width: 5vw;
+    width: 3vw;
     object-fit: scale-down;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: whitesmoke;
+    height:5vh;
+
+}
+.picture{
+    height: 5vh;
+    object-fit: scale-down;
+    margin-left: 1vw;
+}
+.picture_mail{
+    height: 3vh;
+    object-fit: scale-down;
+    margin-left: 1vw;
+}
+.searchicon{
+    width:20px;
+    height: 20px;
 }
 @media (max-device-width: 768px) {
     #container{
@@ -44,18 +67,18 @@
         font-size: 50px;
     }
     .navbar{
-        font-size: 60px;
+        font-size: 50px;
     }
     .navbar-brand {
-        font-size:60px !important;
+        font-size:50px !important;
         color:red;/* Größere Schriftgröße für den Text*/
     }
     /*Navbar Collapse Icon Größe anpassen*/
     .navbar-toggler-icon {
-        font-size: 60px; /* Größere Schriftgröße für das Icon*/
+        font-size: 50px; /* Größere Schriftgröße für das Icon*/
     }
     .dropdown-item{
-        font-size: 60px;
+        font-size: 45px;
     }
     .imageLogo{
         width: 20vw;
@@ -65,12 +88,23 @@
     }
     .user{
         margin: auto;
+        justify-content: end;
     }
     .headerText{
         justify-content: center;
         margin:auto;
     }
-
+    .searchicon{
+        width: 40px;
+        height: 40px;
+    }
+    .font{
+        font-size: 25px;
+    }
+    .picture_mail{
+        margin-left: 5vw;
+        width: 7vw;
+    }
 ;
 }
 
