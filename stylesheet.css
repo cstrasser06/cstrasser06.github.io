@@ -1,17 +1,21 @@
 #container{
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     flex-direction: row;
-    background-color: red;
+    background-color: #D60700;
     justify-content: space-between;
+    color:whitesmoke;
+}
+body{
+    background-color: whitesmoke;
 }
 .logo{
     width: auto;
-    height: 20vh;
+    height: 15vh;
     padding: 3vh;
     display: flex;
-    background-color: red;
+    background-color: #D60700;
     justify-content: start;
 }
 .imageLogo{
@@ -29,10 +33,10 @@
 .user{
     margin-right: 3vw;
     width:auto;
-    height: 20vh;
+    height: 15vh;
 }
 .imageUser{
-    height: 20vh;
+    height: 15vh;
     width: 3vw;
     object-fit: scale-down;
 }
@@ -64,7 +68,7 @@
     flex-wrap: wrap;
     margin-top:3vh;
     justify-content: space-around;
-    background-color: darkgray;
+    background-color: whitesmoke;
 }
 .item-reports {
     width: 30vw;
@@ -72,15 +76,24 @@
     padding: 2vh;
     margin-bottom: 2vh;
     text-align: center;
+    border-radius: 10px;
+}
+.picture-report{
+    width:25vw;
+    height: 27vh;
+    object-fit: scale-down;
+    margin-bottom: 1vh;
 }
 
 .item-reports button {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border: 1px solid #007bff;
-    color: whitesmoke;
+    border: 1px solid red;
+    color: black;
+    padding:0.5vw;
     background-color: transparent;
+    border-radius: 6px;
 }
 .footer{
     background-color: whitesmoke;
@@ -88,7 +101,7 @@
 }
 @media (max-device-width: 768px) {
     #container{
-        background-color: red;
+        background-color: #D60700;
     }
     .headerText{
         font-size: 50px;
@@ -98,7 +111,7 @@
     }
     .navbar-brand {
         font-size:50px !important;
-        color:red;/* Größere Schriftgröße für den Text*/
+        color:#D60700;
     }
     .navbar-toggler-icon {
         font-size: 50px; /* Größere Schriftgröße für das Icon*/
@@ -140,9 +153,27 @@
     .item-reports{
         width: 90%;
         border: 1px solid;
-        padding: 2vh;
+        padding: 1vh;
         margin: 2vh;
         text-align: center;
+    }
+    .item-reports button {
+        margin-top:1vh;
+        width:20vw;
+        height: 3vh;
+        font-size: 30px;
+        border: 1px solid red;
+        color: black;
+    }
+    .item-reports h3{
+        font-size: 50px;
+    }
+    .item-reports p{
+        font-size: 35px;
+    }
+    .picture-report{
+        width: 100%;
+        object-fit: contain;
     }
     .footer{
         font-size: 30px;
