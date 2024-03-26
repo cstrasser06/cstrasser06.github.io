@@ -15,7 +15,8 @@ body{
     height: 15vh;
     padding: 3vh;
     display: flex;
-    background-color: #D60700;
+    /*background-color: #D60700;*/
+    background-color: blue;
     justify-content: start;
 }
 .imageLogo{
@@ -198,5 +199,93 @@ body{
 
 ;
 }
-
+@media screen and (max-device-width: 768px) and (orientation: landscape) {
+    #container{
+        background-color: #D60700;
+    }
+    .headerText{
+        font-size: 30px;
+    }
+    .navbar{
+        font-size: 30px;
+    }
+    .navbar-brand {
+        font-size:30px !important;
+        color:#D60700;
+    }
+    .navbar-toggler-icon {
+        font-size: 30px; /* Größere Schriftgröße für das Icon*/
+    }
+    .dropdown-item{
+        font-size: 25px;
+    }
+    .imageLogo{
+        width: 15vw;
+    }
+    .imageUser{
+        width: 7vw;
+    }
+    .user{
+        margin: auto;
+        justify-content: end;
+    }
+    .headerText{
+        justify-content: center;
+        margin:auto;
+    }
+    .searchicon{
+        width: 30px;
+        height: 30px;
+    }
+    .font{
+        font-size: 20px;
+    }
+    .picture_mail{
+        margin-left: 4vw;
+        width: 5vw;
+    }
+    .picture_pc{
+        background-image: url("https://raw.githubusercontent.com/cstrasser06/cstrasser06.github.io/main/img/_MG_7164.jpg");
+        background-position: center;
+        height: 20vh;
+    }
+    .reports{
+        flex-direction: column;
+        margin-top:4vh;
+    }
+    .reports{
+        flex-wrap: wrap;
+    }
+    .item-reports{
+        width: 80%;
+        border: 1px solid;
+        padding: 1vh;
+        margin-top: 0.5vh;
+        margin-bottom: 2vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        text-align: center;
+    }
+    .item-reports button {
+        margin-top:1vh;
+        width:15vw;
+        height: 2vh;
+        font-size: 20px;
+        border: 1px solid red;
+        color: black;
+    }
+    .item-reports h3{
+        font-size: 30px;
+    }
+    .item-reports p{
+        font-size: 20px;
+    }
+    .picture-report{
+        width: 100%;
+        object-fit: contain;
+    }
+    .footer{
+        font-size: 20px;
+    }
+}
 
