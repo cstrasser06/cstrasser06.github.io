@@ -10,5 +10,6 @@ document.addEventListener("DOMContentLoaded", function(){
         var container = document.getElementById('container');
         container.style.justifyContent = "left";
         container.style.alignContent = "center";
+        document.body.style.backgroundColor = "whitesmoke";
     }
 });
