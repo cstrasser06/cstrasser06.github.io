@@ -35,14 +35,16 @@ body{
     font-size: 50px;
 }
 .user{
-    margin-right: 3vw;
+    margin-right: 5%;
     width:auto;
     height: 15vh;
+    justify-content: end;
 }
 .imageUser{
     height: 15vh;
     width: 3vw;
     object-fit: scale-down;
+    background-color: green;
 }
 .info{
     display: flex;
@@ -159,7 +161,7 @@ body{
     .picture_pc{
         background-image: url("https://raw.githubusercontent.com/cstrasser06/cstrasser06.github.io/main/img/_MG_7164.jpg");
         background-position: center;
-        height: 30vh;
+        height:30vh;
     }
     .reports{
         flex-direction: column;
@@ -202,31 +204,31 @@ body{
 
 ;
 }
-@media (max-device-width: 768px) and (orientation: landscape) {
+@media (max-device-width: 768px) and (orientation: landscape){
     #container{
         background-color: #D60700;
     }
     .headerText{
-        font-size: 30px;
+        font-size: 50px;
     }
     .navbar{
-        font-size: 30px;
+        font-size: 50px;
     }
     .navbar-brand {
-        font-size:30px !important;
+        font-size:50px !important;
         color:#D60700;
     }
     .navbar-toggler-icon {
-        font-size: 30px; /* Größere Schriftgröße für das Icon*/
+        font-size: 50px; /* Größere Schriftgröße für das Icon*/
     }
     .dropdown-item{
-        font-size: 25px;
+        font-size: 45px;
     }
     .imageLogo{
-        width: 15vw;
+        width: 20vw;
     }
     .imageUser{
-        width: 7vw;
+        width: 9vw;
     }
     .user{
         margin: auto;
@@ -237,31 +239,30 @@ body{
         margin:auto;
     }
     .searchicon{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
     .font{
-        font-size: 20px;
+        font-size: 25px;
     }
     .picture_mail{
-        margin-left: 4vw;
-        width: 5vw;
+        margin-left: 5vw;
+        width: 7vw;
     }
     .picture_pc{
         background-image: url("https://raw.githubusercontent.com/cstrasser06/cstrasser06.github.io/main/img/_MG_7164.jpg");
         background-position: center;
-        height: max-content;
+        height:30vh;
     }
     .reports{
         flex-direction: column;
-        margin-top:4vh;
-        justify-content: center;
+        margin-top:5vh;
     }
     .reports{
         flex-wrap: wrap;
     }
     .item-reports{
-        width: 80%;
+        width: 90%;
         border: 1px solid;
         padding: 1vh;
         margin-top: 0.5vh;
@@ -272,24 +273,25 @@ body{
     }
     .item-reports button {
         margin-top:1vh;
-        width:15vw;
-        height: 2vh;
-        font-size: 20px;
+        width:20vw;
+        height: 3vh;
+        font-size: 30px;
         border: 1px solid red;
         color: black;
     }
     .item-reports h3{
-        font-size: 30px;
+        font-size: 50px;
     }
     .item-reports p{
-        font-size: 20px;
+        font-size: 35px;
     }
     .picture-report{
         width: 100%;
         object-fit: contain;
     }
     .footer{
-        font-size: 20px;
+        font-size: 30px;
     }
-}
 
+;
+}
