@@ -9,6 +9,8 @@
 }
 body{
     background-color: whitesmoke;
+    height: 100%;
+    margin:0;
 }
 .logo{
     width: auto;
@@ -145,6 +147,7 @@ body{
     }
     .headerText{
         background-color: green;
+        align-content: center;
     }
     .logo{
         padding: 1px;
@@ -171,6 +174,8 @@ body{
     }
     .reports{
         flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
     }
     .item-reports{
         width: 90%;
@@ -206,15 +211,16 @@ body{
 
 ;
 }
-@media (max-device-width: 768px) and (orientation: landscape){
+@media (min-device-width: 769px) and (max-device-width: 1700px){
     #container{
-        background-color: #D60700;
+        background-color: yellowgreen;
     }
     .headerText{
         font-size: 50px;
     }
     .navbar{
         font-size: 50px;
+        width:auto;
     }
     .navbar-brand {
         font-size:50px !important;
@@ -294,6 +300,8 @@ body{
     .footer{
         font-size: 30px;
     }
-
+    .navbar-collapse{
+        display: none !important;
+    }
 ;
 }
