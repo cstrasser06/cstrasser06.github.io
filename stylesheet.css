@@ -11,6 +11,7 @@ body{
     background-color: whitesmoke;
     height: 100%;
     margin:0;
+    width: 100%;
 }
 .logo{
     width: auto;
@@ -208,10 +209,6 @@ body{
     .footer{
         font-size: 30px;
     }
-    .navbar-collapse{
-        display: none !important;
-    }
-
 ;
 }
 @media (min-device-width: 769px) and (max-device-width: 1700px){
@@ -223,11 +220,14 @@ body{
     }
     .navbar{
         font-size: 50px;
-        width:auto;
+        width: 100%;
     }
     .navbar-brand {
-        font-size:50px !important;
+        font-size:35px !important;
         color:#D60700;
+    }
+    .nav-item{
+        font-size: 30px;
     }
     .navbar-toggler-icon {
         font-size: 50px; /* Größere Schriftgröße für das Icon*/
@@ -302,9 +302,6 @@ body{
     }
     .footer{
         font-size: 30px;
-    }
-    .navbar-collapse{
-        display: none !important;
     }
 ;
 }
