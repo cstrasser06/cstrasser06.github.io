@@ -208,6 +208,9 @@ body{
     .footer{
         font-size: 30px;
     }
+    .navbar-collapse{
+        display: none !important;
+    }
 
 ;
 }
