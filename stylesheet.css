@@ -144,8 +144,10 @@ body{
         justify-content: end;
     }
     .headerText{
-        justify-content: center;
-        margin:auto;
+        background-color: green;
+    }
+    .logo{
+        padding: 1px;
     }
     .searchicon{
         width: 40px;
