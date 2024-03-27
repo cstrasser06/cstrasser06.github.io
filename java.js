@@ -13,8 +13,3 @@ document.addEventListener("DOMContentLoaded", function(){
         document.body.style.backgroundColor = "whitesmoke";
     }
 });
-window.addEventListener("orientationchange", function() {
-    if (window.orientation == 90 || window.orientation == -90) {
-        window.alert("Handy bitte nicht horizontal halten, das Design leidet darunter!")
-    }
-});

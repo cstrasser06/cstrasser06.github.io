@@ -19,7 +19,7 @@ body{
     padding: 3vh;
     display: flex;
     /*background-color: #D60700;*/
-    background-color: blue;
+    background-color: #D60700;
     justify-content: start;
 }
 #navbar{
@@ -47,7 +47,7 @@ body{
     height: 15vh;
     width: 3vw;
     object-fit: scale-down;
-    background-color: green;
+    background-color: #D60700;
 }
 .info{
     display: flex;
@@ -120,7 +120,6 @@ body{
     #container{
         background-color: #D60700;
     }
-
     .headerText{
         font-size: 50px;
     }
@@ -138,25 +137,28 @@ body{
         font-size: 45px;
     }
     .imageLogo{
-        width: 20vw;
+        width: 12vw;
     }
     .imageUser{
-        width: 9vw;
+        width: 10vw;
+        height: auto;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        background-color: #D60700;
     }
     .user{
-        margin: auto;
+        width: 35vw;
+        background-color: #D60700;
+        display: flex;
         justify-content: end;
     }
     .headerText{
-        background-color: green;
+        background-color: #D60700;
         align-content: center;
     }
     .logo{
-        padding: 1px;
-    }
-    .searchicon{
-        width: 40px;
-        height: 40px;
+        width: fit-content;
+        padding: 2px;
     }
     .font{
         font-size: 25px;
@@ -214,11 +216,11 @@ body{
 }
 @media (min-device-width: 769px) and (max-device-width: 1700px){
     #container{
-        background-color: yellowgreen;
+        background-color: #D60700;
         height: max-content;
     }
     .headerText{
-        font-size: 50px;
+        font-size: 40px;
     }
     .navbar{
         font-size: 50px;
@@ -238,18 +240,19 @@ body{
         font-size: 45px;
     }
     .imageLogo{
-        width: 20vw;
+        width: 10vw;
+    }
+    .user{
+        width: 50vw;
+        background-color:  #D60700;
+        display: flex;
+        justify-content: end;
     }
     .imageUser{
         width: 9vw;
     }
-    .user{
-        margin: auto;
-        justify-content: end;
-    }
     .headerText{
-        justify-content: center;
-        margin:auto;
+        width: max-content;
     }
     .searchicon{
         width: 40px;
