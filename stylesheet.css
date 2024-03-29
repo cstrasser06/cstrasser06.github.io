@@ -85,7 +85,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-top:2vh;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: whitesmoke;
 }
 .item-reports {
@@ -95,12 +95,6 @@ body{
     margin-bottom: 2vh;
     text-align: center;
     border-radius: 10px;
-}
-.picture-report{
-    width:25vw;
-    height: 27vh;
-    object-fit: scale-down;
-    margin-bottom: 1vh;
 }
 
 .item-reports button {
@@ -113,6 +107,12 @@ body{
     background-color: transparent;
     border-radius: 6px;
 }
+.item-reports img{
+    width: 22vw;
+    height: 27vh;
+    object-fit: scale-down;
+    margin-bottom: 1vh;
+}
 .footer{
     background-color: whitesmoke;
     padding: 1vw;
@@ -123,7 +123,7 @@ body{
     }
     .headerText{
         font-size: 50px;
-        background-color: transparent;
+        background-color: yellowgreen;
         align-content: center;
         margin: auto;
     }
@@ -179,14 +179,14 @@ body{
     .reports{
         flex-direction: column;
         margin-top:5vh;
-    }
-    .reports{
         flex-wrap: wrap;
         width: 100%;
+        height: fit-content;
         justify-content: center;
     }
     .item-reports{
-        width: 90%;
+        width: fit-content;
+        height: max-content;
         border: 1px solid;
         padding: 1vh;
         margin-top: 0.5vh;
@@ -197,8 +197,9 @@ body{
     }
     .item-reports button {
         margin-top:1vh;
-        width:20vw;
-        height: 3vh;
+        width:fit-content;
+        height: fit-content;
+        padding:1vw;
         font-size: 30px;
         border: 1px solid red;
         color: black;
@@ -209,7 +210,7 @@ body{
     .item-reports p{
         font-size: 35px;
     }
-    .picture-report{
+    .item-reports img{
         width: 100%;
         object-fit: contain;
     }
@@ -250,16 +251,15 @@ body{
         justify-content: end;
     }
     .imageUser{
-        width: 9vw;
+        width: 7vw;
         object-fit: scale-down;
-        margin-top: 2vh;
     }
     .headerText{
         font-size: 40px;
         width: max-content;
         display: flex;
         align-items: center;
-        background-color: transparent;
+        background-color: blue;
     }
     .searchicon{
         width: 40px;
@@ -278,9 +278,12 @@ body{
     }
     .reports{
         flex-wrap: wrap;
+        width: fit-content;
+        margin-left: 8vw;
+        margin-right: 8vw;
     }
     .item-reports{
-        width: 90%;
+        width: fit-content;
         border: 1px solid;
         padding: 1vh;
         margin-top: 0.5vh;
@@ -291,9 +294,10 @@ body{
     }
     .item-reports button {
         margin-top:1vh;
-        width:20vw;
-        height: 3vh;
+        width:fit-content;
+        height: fit-content;
         font-size: 30px;
+        padding:1vw;
         border: 1px solid red;
         color: black;
     }
@@ -303,6 +307,11 @@ body{
     .item-reports p{
         font-size: 35px;
     }
+    .item-reports img{
+        width: 100%;
+        height: max-content;
+        object-fit: contain;
+    }
     .picture-report{
         width: 100%;
         object-fit: contain;
@@ -311,4 +320,9 @@ body{
         font-size: 30px;
     }
 ;
+}
+@media (max-device-width: 768px) and (orientation: landscape){
+    .picture_pc{
+        height: max-content;
+    }
 }
