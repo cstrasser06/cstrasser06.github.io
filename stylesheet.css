@@ -255,6 +255,7 @@ body{
         display: flex;
         align-items: center;
         background-color: blue;
+        margin: auto;
     }
     .searchicon{
         width: 40px;
