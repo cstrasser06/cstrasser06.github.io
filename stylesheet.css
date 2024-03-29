@@ -238,9 +238,6 @@ body{
     .navbar-toggler-icon {
         font-size: 50px; /* Größere Schriftgröße für das Icon*/
     }
-    .dropdown-item{
-        font-size: 45px;
-    }
     .imageLogo{
         width: 10vw;
     }
