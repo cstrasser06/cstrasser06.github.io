@@ -159,6 +159,8 @@ body{
     .logo{
         width: fit-content;
         padding: 2px;
+        background-color: magenta;
+        align-items: center;
     }
     .font{
         font-size: 25px;
