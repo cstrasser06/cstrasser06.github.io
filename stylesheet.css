@@ -142,6 +142,8 @@ body{
     }
     .imageLogo{
         width: 12vw;
+        height: 11vh;
+        object-fit: scale-down;
     }
     .imageUser{
         width: 10vw;
