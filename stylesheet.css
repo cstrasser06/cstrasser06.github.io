@@ -174,7 +174,7 @@ body{
     .picture_pc{
         background-position: center;
         height:30vh;
-        object-fit: cover;
+        object-fit: scale-down;
     }
     .reports{
         flex-direction: column;
