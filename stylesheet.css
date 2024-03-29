@@ -125,6 +125,7 @@ body{
         font-size: 50px;
         background-color: yellowgreen;
         align-content: center;
+        margin: auto;
     }
     .navbar{
         font-size: 50px;
@@ -255,7 +256,6 @@ body{
         display: flex;
         align-items: center;
         background-color: blue;
-        margin: auto;
     }
     .searchicon{
         width: 40px;
