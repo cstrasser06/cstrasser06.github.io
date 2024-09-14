@@ -8,10 +8,13 @@ html{
 .nav-color{
     background-color: #223C55 !important;
 }
+.nav-link{
+    cursor: pointer;
+}
 #content{
     width: 100%;
     background-color: red;
-    height: 200vh;
+    height: max-content;
 }
 
 #introduction{
@@ -31,10 +34,60 @@ html{
     border: 1px solid black;
 }
 .portrait{
+    object-fit: scale-down;
     width:80%;
     height: 80%;
-    border-radius: 10% ;
+    border-radius: 10%;
 }
+.portrait-text{
+    font-size: 3rem;
+}
+
+.section {
+    height: 100vh; /* Jede Sektion nimmt die volle Höhe des Fensters ein */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro {
+    background-color: #f0f0f0;
+}
+
+.block-container {
+    height: 300vh; /* Simuliert langen Scrollbereich */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block {
+    width: 300px;
+    height: 200px;
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    opacity: 0; /* Anfangs unsichtbar */
+    transform: translateY(100px); /* Startposition der Blöcke */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Glatte Animationen */
+}
+
+/* Wenn die Blöcke sichtbar werden */
+.block.show {
+    opacity: 1;
+    transform: translateY(0); /* Zurück auf normale Position */
+}
+
+
+.imprint{
+    width: 100%;
+}
+
 
 
 
@@ -110,12 +163,14 @@ html{
         display: flex;
         justify-content: center;
         width: 100%;
-        height:90vh;
+        height:43vh;
         background-color: green;
         border: 1px solid black;
     }
     .portrait-text{
         font-size: 2rem;
+        display: flex;
+        justify-content: center;
     }
 
 }
