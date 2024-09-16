@@ -1,0 +1,26 @@
+#content_imprint{
+    width: 100%;
+    height:max-content;
+    background-color: #0f4768 !important;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+.imprint{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    background-color: white !important;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 60%;
+    padding:1vh;
+}
+@media (max-width: 991px) {
+    .imprint{
+        width: 90%;
+        padding:1vh;
+    }
+}

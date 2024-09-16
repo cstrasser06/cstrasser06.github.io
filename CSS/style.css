@@ -1,6 +1,13 @@
+/* ==================== */
+/*       Global         */
+/* ==================== */
 html{
     scroll-behavior: smooth;
 }
+
+/* ==================== */
+/*       Header         */
+/* ==================== */
 .logo{
     width: 170px;
     height: 60px;
@@ -11,6 +18,11 @@ html{
 .nav-link{
     cursor: pointer;
 }
+
+/* ==================== */
+/*       Welcome        */
+/* ==================== */
+
 #content{
     width: 100%;
     background-color: #0f4768 !important;
@@ -21,20 +33,42 @@ html{
     display:flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
-.fade{
-    background-image:-webkit-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') !important;
+
+.img_universe {
+    position: relative;
+    width: 50%;
+    height: 90vh;
+    overflow: hidden;
 }
-.element{
+
+.img_universe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #0f4768),
+    url("../img/background-4094945_1920.jpg"), center;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.element {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
-    height: 90%;
-    background-color: #3e6e9f !important;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 2;
 }
+
 .portrait{
     object-fit: scale-down;
     width:80%;
@@ -44,17 +78,15 @@ html{
 .portrait-text{
     font-size: 3rem;
 }
-
+/* ==================== */
+/*   animated Blocks    */
+/* ==================== */
 .section {
     height: 100vh; /* Jede Sektion nimmt die volle Höhe des Fensters ein */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.intro {
-    background-color: #f0f0f0;
 }
 
 .block-container {
@@ -66,30 +98,28 @@ html{
 }
 
 .block {
-    width: 300px;
-    height: 200px;
-    background-color: #007BFF;
+    width: 70%;
+    height: 40%;
+    background-color: transparent;/*#007BFF*/
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    opacity: 0; /* Anfangs unsichtbar */
-    transform: translateY(100px); /* Startposition der Blöcke */
-    transition: opacity 1s ease-out, transform 1s ease-out; /* Glatte Animationen */
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    /*border:solid black 1px;*/
 }
 
-/* Wenn die Blöcke sichtbar werden */
 .block.show {
     opacity: 1;
-    transform: translateY(0); /* Zurück auf normale Position */
+    transform: translateY(0);
 }
 
-
-.imprint{
-    width: 100%;
-}
-
+/* ==================== */
+/*        Footer        */
+/* ==================== */
 .footer{
     display: flex;
     justify-content: end;
@@ -123,7 +153,45 @@ html{
     font-size: 3rem;
 }
 
-/* Mobile Styles */
+.end-content{
+    width: 100%;
+    height: 50vh;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0f4768;
+    color: white;
+    border: solid green 2px;
+}
+.end-footer{
+    display: flex;
+    justify-content: end;
+    align-items:end;
+    padding-bottom: 1vh;
+    padding-right: 3vw;
+    width: 100%;
+    height: 10vh;
+    background-color: #223C55;
+    color: white;
+}
+
+
+
+
+/* ==================== */
+/*  Responsive Mobile   */
+/* ==================== */
 @media (max-width: 991px) {
     .navbar-collapse {
         height: 85vh;
@@ -153,21 +221,38 @@ html{
         width: 100%;
         height: fit-content;
     }
+    .img_universe::before {
+
+
+        opacity: 0.6; /* Das Hintergrundbild wird mit 20% Sichtbarkeit angezeigt */
+        z-index: 1;
+    }
     .element{
         display: flex;
         justify-content: center;
         width: 100%;
         height:90vh;
-        background-color: green;
-        border: 1px solid black;
     }
     .portrait-text{
         font-size: 2rem;
         display: flex;
         justify-content: center;
     }
+    .portrait{
+        object-fit: scale-down;
+        width:70%;
+        height: 70%;
+    }
+
+    .end-footer{
+        padding-right: 5vw;
+
+    }
 
 }
+/* ==================== */
+/*  responsive NavBar  */
+/* ==================== */
 @media (min-width: 992px) and (max-width: 1400px){
     .navbar-nav{
         display: flex;
