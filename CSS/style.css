@@ -102,7 +102,7 @@ html{
 }
 
 .block-container {
-    height: 300vh;
+    height: 500vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -110,9 +110,9 @@ html{
 }
 
 .block {
-    width: 70%;
+    width: 100%;
+    background-color: red;
     height: 20%;
-    background-color: transparent;/*#007BFF*/
     color: white;
     display: flex;
     justify-content: center;
@@ -129,12 +129,15 @@ html{
 }
 
 .personal{
-    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-top:1vw;
     padding-bottom:1vw;
+    background: linear-gradient(360deg , rgba(255, 255, 255, 0), #0F4768),
+    linear-gradient(180deg , rgba(255, 255, 255, 0), #0F4768),
+    #042543;
+
 }
 .part-two{
     width: 45%;
@@ -149,14 +152,14 @@ html{
 }
 
 .tech-stack{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:start;
     padding-top:1vw;
     padding-bottom:1vw;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #0f4768),
-    linear-gradient(to top, rgba(255, 255, 255, 0), #0f4768),
+    background: linear-gradient(360deg , rgba(255, 255, 255, 0), #0f4768),
+    linear-gradient(180deg , rgba(255, 255, 255, 0), #0f4768),
     url("../img/code-944504_1920.jpg"), center;
 }
 
@@ -351,7 +354,7 @@ html{
         flex-direction: column;
         padding-top: 1vh;
         padding-bottom: 1vh;
-        width: 70%;
+        width: 100%;
     }
     .part-two{
         width:100%;
@@ -364,6 +367,12 @@ html{
     .font-large{
         font-size: 3rem;
         font-family: code-font,Serif;
+    }
+    .tech-stack{
+        height: max-content;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #0f4768),
+        linear-gradient(to top, rgba(255, 255, 255, 0), #0f4768),
+        url("../img/code-1839877_1920.jpg"), url("../img/code-944504_1920.jpg"),center, repeat-y;
     }
     .tech-content{
         flex-direction: column;
