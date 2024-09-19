@@ -93,6 +93,9 @@ html{
 .portrait-text{
     font-size: 3rem;
 }
+.portrait-text-small{
+    font-size: 1.2rem;
+}
 /* ==================== */
 /*   animated Blocks    */
 /* ==================== */
@@ -130,7 +133,16 @@ html{
     opacity: 1;
     transform: translateY(0);
 }
-
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:1vw;
+    padding-bottom:1vw;
+    background: linear-gradient(360deg , rgba(255, 255, 255, 0), #0F4768),
+    linear-gradient(180deg , rgba(255, 255, 255, 0), #0F4768),
+    #000000;
+}
 .personal{
     display: flex;
     flex-direction: row;
@@ -139,7 +151,7 @@ html{
     padding-bottom:1vw;
     background: linear-gradient(360deg , rgba(255, 255, 255, 0), #0F4768),
     linear-gradient(180deg , rgba(255, 255, 255, 0), #0F4768),
-    #042543;
+    #000000;
 
 }
 .part-two{
@@ -339,9 +351,17 @@ html{
         object-fit: scale-down;
         width:70%;
         height: 70%;
-        margin-top:1vh;
+        margin-top:0vh;
     }
-
+    .headline{
+        font-size: 2rem;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .font-large{
+        font-size: 3rem;
+        font-family: code-font,Serif;
+    }
     .end-footer{
         padding-right: 5vw;
 
