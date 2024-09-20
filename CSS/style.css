@@ -385,6 +385,14 @@ html{
         opacity: 0.6; /* Das Hintergrundbild wird mit 20% Sichtbarkeit angezeigt */
         z-index: 1;
     }
+    .block-container{
+        height: max-content;
+    }
+    .placeholder-mobile{
+        width: 100%;
+        background-color:#0f4768;
+        height: 13vh;
+    }
     .element{
         display: flex;
         justify-content: center;
