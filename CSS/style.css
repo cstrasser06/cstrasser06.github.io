@@ -108,7 +108,7 @@ html{
 }
 
 .block-container {
-    height: 550vh;
+    height: 600vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
